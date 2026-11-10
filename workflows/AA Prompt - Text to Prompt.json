@@ -1,0 +1,118 @@
+{
+  "id": "6d0c5b9e-3f43-4c56-9a51-0b8b6f2f7a11",
+  "revision": 0,
+  "last_node_id": 2,
+  "last_link_id": 1,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "AAPromptLLM",
+      "pos": [
+        100,
+        100
+      ],
+      "size": [
+        460,
+        640
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "reasoning",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AAPromptLLM"
+      },
+      "widgets_values": [
+        "A cozy cyberpunk ramen stall on a rainy night: an old cook and a young delivery courier share a laugh under flickering neon signs.",
+        "off",
+        1024,
+        0.7,
+        0.8,
+        20,
+        1.5,
+        0,
+        "randomize",
+        "You are an expert prompt writer for text-to-image models. Turn the user's idea into one richly detailed image-generation prompt written in natural English. Cover the subject and their appearance, clothing, pose and expression, the setting, lighting, colour palette, camera angle and lens, composition, mood and visual style. Output only the final prompt as a single paragraph, with no preamble, quotes, lists or markdown."
+      ]
+    },
+    {
+      "id": 2,
+      "type": "PreviewAny",
+      "pos": [
+        620,
+        100
+      ],
+      "size": [
+        520,
+        460
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny",
+        "cnr_id": "comfy-core",
+        "ver": "0.44.0"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "frontendVersion": "1.57.6"
+  },
+  "version": 0.4
+}

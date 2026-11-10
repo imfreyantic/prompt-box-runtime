@@ -1,0 +1,3 @@
+# Build tools for llama.cpp, installed into venv-box by the orchestrator only when compiling from source.
+cmake==4.4.4
+ninja==1.13.2

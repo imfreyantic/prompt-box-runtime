@@ -1,0 +1,31 @@
+{
+  "1": {
+    "class_type": "AAPromptLLM",
+    "inputs": {
+      "prompt": "A cozy cyberpunk ramen stall on a rainy night: an old cook and a young delivery courier share a laugh under flickering neon signs.",
+      "thinking": "off",
+      "max_tokens": 1024,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "presence_penalty": 1.5,
+      "seed": 0,
+      "system": "You are an expert prompt writer for text-to-image models. Turn the user's idea into one richly detailed image-generation prompt written in natural English. Cover the subject and their appearance, clothing, pose and expression, the setting, lighting, colour palette, camera angle and lens, composition, mood and visual style. Output only the final prompt as a single paragraph, with no preamble, quotes, lists or markdown."
+    },
+    "_meta": {
+      "title": "AA Prompt LLM (Qwen3.8)"
+    }
+  },
+  "2": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Preview as Text"
+    }
+  }
+}

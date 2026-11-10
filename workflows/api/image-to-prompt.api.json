@@ -1,0 +1,44 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "example.png"
+    },
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "2": {
+    "class_type": "AAPromptLLM",
+    "inputs": {
+      "prompt": "Describe this image as a detailed image-generation prompt: subject and appearance, clothing, pose and expression, setting, lighting, colour palette, camera angle and lens, composition and overall style. Output only the prompt as one paragraph, with no preamble or markdown.",
+      "thinking": "off",
+      "max_tokens": 1024,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "presence_penalty": 1.5,
+      "seed": 0,
+      "system": "You are an expert at describing images as prompts for text-to-image models. Be precise and concrete so the image could be recreated.",
+      "image": [
+        "1",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "AA Prompt LLM (Qwen3.8)"
+    }
+  },
+  "3": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "2",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Preview as Text"
+    }
+  }
+}
