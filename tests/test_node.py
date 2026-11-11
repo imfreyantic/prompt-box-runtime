@@ -194,7 +194,7 @@ class HttpTests(unittest.TestCase):
 class NodeDefinitionTests(unittest.TestCase):
     def test_registration(self):
         self.assertIs(NODE_CLASS_MAPPINGS["AAPromptLLM"], AAPromptLLM)
-        self.assertEqual(NODE_DISPLAY_NAME_MAPPINGS["AAPromptLLM"], "AA Prompt LLM (Qwen3.8)")
+        self.assertEqual(NODE_DISPLAY_NAME_MAPPINGS["AAPromptLLM"], "AA Prompt LLM (Diddy)")
         self.assertEqual(AAPromptLLM.CATEGORY, "AA/Prompt")
         self.assertEqual(AAPromptLLM.RETURN_TYPES, ("STRING", "STRING"))
         self.assertEqual(AAPromptLLM.FUNCTION, "generate")

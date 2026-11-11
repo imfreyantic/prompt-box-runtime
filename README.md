@@ -159,7 +159,7 @@ warning; tickets are deterministic per `exp`, so generate a fresh one for each c
 
 ## The ComfyUI node and workflows
 
-`custom_nodes/aa_prompt_llm` registers **AA Prompt LLM (Qwen3.8)** (`AAPromptLLM`, category `AA/Prompt`). Inputs:
+`custom_nodes/aa_prompt_llm` registers **AA Prompt LLM (Diddy)** (`AAPromptLLM`, category `AA/Prompt`). Inputs:
 `prompt`, `thinking` (`off`/`low`/`medium`/`xhigh`), `max_tokens` (16–32768), `temperature`, `top_p`, `top_k`,
 `presence_penalty`, `seed`, optional `system` and optional `image` (every image of the batch is sent as a PNG data
 URL). It POSTs a non-streaming request to `http://127.0.0.1:8080/v1/chat/completions` (900 s timeout, no proxy;

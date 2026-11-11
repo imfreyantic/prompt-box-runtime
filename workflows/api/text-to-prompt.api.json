@@ -13,7 +13,7 @@
       "system": "You are an expert prompt writer for text-to-image models. Turn the user's idea into one richly detailed image-generation prompt written in natural English. Cover the subject and their appearance, clothing, pose and expression, the setting, lighting, colour palette, camera angle and lens, composition, mood and visual style. Output only the final prompt as a single paragraph, with no preamble, quotes, lists or markdown."
     },
     "_meta": {
-      "title": "AA Prompt LLM (Qwen3.8)"
+      "title": "AA Prompt LLM (Diddy)"
     }
   },
   "2": {

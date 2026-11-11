@@ -20,7 +20,7 @@ log = logging.getLogger("aa_prompt_llm")
 
 
 class AAPromptLLM:
-    """Qwen3.8 27B (llama-server on this box) as a prompt writer / image describer."""
+    """Diddy (the 27B model on this box's llama-server) as a prompt writer / image describer."""
 
     DESCRIPTION = (
         "Sends the prompt (plus every image of the optional IMAGE batch) to the prompt box's "
@@ -94,4 +94,4 @@ class AAPromptLLM:
 
 
 NODE_CLASS_MAPPINGS = {"AAPromptLLM": AAPromptLLM}
-NODE_DISPLAY_NAME_MAPPINGS = {"AAPromptLLM": "AA Prompt LLM (Qwen3.8)"}
+NODE_DISPLAY_NAME_MAPPINGS = {"AAPromptLLM": "AA Prompt LLM (Diddy)"}
